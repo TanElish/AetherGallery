@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Interactive Photo Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body onload="addTabFocus()">
+
+  <header>
+    <h1>Accessible Photo Gallery</h1>
+  </header>
+
+  <main>
+    <h2>Featured Collection</h2>
+
+    <!-- Display area for previewed image -->
+    <div id="image">
+      Hover over or focus on an image below to display here.
+    </div>
+
+    <!-- Gallery with 6 images and complete event listeners -->
+    <div class="gallery">
+      <img class="preview" 
+           src="https://picsum.photos/600/400?random=1" 
+           alt="Mountain range during dusk with a purple sky" 
+           onmouseover="upDate(this)" 
+           onmouseleave="undo()" 
+           onfocus="upDate(this)" 
+           onblur="undo()">
+
+      <img class="preview" 
+           src="https://picsum.photos/600/400?random=2" 
+           alt="Dense green forest path covered in light fog" 
+           onmouseover="upDate(this)" 
+           onmouseleave="undo()" 
+           onfocus="upDate(this)" 
+           onblur="undo()">
+
+      <img class="preview" 
+           src="https://picsum.photos/600/400?random=3" 
+           alt="Calm ocean waves crashing on a sandy beach at sunset" 
+           onmouseover="upDate(this)" 
+           onmouseleave="undo()" 
+           onfocus="upDate(this)" 
+           onblur="undo()">
+
+      <img class="preview" 
+           src="https://picsum.photos/600/400?random=4" 
+           alt="Modern city skyline illuminated during night time" 
+           onmouseover="upDate(this)" 
+           onmouseleave="undo()" 
+           onfocus="upDate(this)" 
+           onblur="undo()">
+
+      <img class="preview" 
+           src="https://picsum.photos/600/400?random=5" 
+           alt="Winding road surrounded by autumn trees" 
+           onmouseover="upDate(this)" 
+           onmouseleave="undo()" 
+           onfocus="upDate(this)" 
+           onblur="undo()">
+
+      <img class="preview" 
+           src="https://picsum.photos/600/400?random=6" 
+           alt="Snowy mountain peak illuminated by bright morning sun" 
+           onmouseover="upDate(this)" 
+           onmouseleave="undo()" 
+           onfocus="upDate(this)" 
+           onblur="undo()">
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Interactive Web Accessibility Project</p>
+  </footer>
+
+</body>
+</html>
